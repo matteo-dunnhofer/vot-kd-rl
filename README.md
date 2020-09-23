@@ -8,7 +8,7 @@ Official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), **
 The repository contains the implementation of the following trackers.  
 
 ### TRAS, TRAST, TRASFUST
-**[[Paper]](https://arxiv.org/abs/2007.04108)  [[Raw results]]() [[Pretrained Model]]() [[Qualitative Results]]((https://youtu.be/uKtQgPk3nCU)) **
+**[[Paper]](https://arxiv.org/abs/2007.04108)  [[Raw results]]() [[Pretrained Model]]() [[Qualitative Results]]((https://youtu.be/uKtQgPk3nCU))**
     
 
 ![ACCV_qualex_video](https://youtu.be/uKtQgPk3nCU)
