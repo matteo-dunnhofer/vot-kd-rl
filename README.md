@@ -17,8 +17,7 @@ The repository contains the implementation of the following trackers.
 **[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  [[Raw results]]()
   [[Pretrained Model]]() **
     
-![ICCVW_qualex_video](https://youtu.be/jSGLafk4-G4)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jSGLafk4-G4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![ICCVW_qualex_video](https://img.youtube.com/vi/jSGLafk4-G4/hqdefault.jpg)](https://youtu.be/jSGLafk4-G4)
 
 
 
