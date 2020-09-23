@@ -8,14 +8,15 @@ Official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), **
 The repository contains the implementation of the following trackers.  
 
 ### TRAS, TRAST, TRASFUST
-**[[Paper]](https://arxiv.org/abs/2007.04108)  [[Raw results]]() [[Pretrained Model]]() [[Qualitative Results]]((https://youtu.be/uKtQgPk3nCU))**
+**[[Paper]](https://arxiv.org/abs/2007.04108)  [[Qualitative results]](https://youtu.be/uKtQgPk3nCU) [[Raw results]]() [[Pretrained Model]]()**
     
 
 ![ACCV_qualex_video](https://youtu.be/uKtQgPk3nCU)
 
 ### A3CT, A3CTD
-**[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  [[Raw results]]()
-  [[Pretrained Model]]() [[Qualitative Results]]((https://youtu.be/jSGLafk4-G4))**
+**[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  
+[[Qualitative results]](https://youtu.be/jSGLafk4-G4) [[Raw results]]()
+  [[Pretrained Model]]()**
     
 ![ICCVW_qualex_video](https://youtu.be/jSGLafk4-G4)
 
