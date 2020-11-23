@@ -7,13 +7,13 @@ In particular, the repository contains the official implementation of the **TRAS
 ### TRAS, TRAST, TRASFUST
 **[[Paper]](https://arxiv.org/abs/2007.04108)  [[Qualitative results]](https://youtu.be/uKtQgPk3nCU) [[Raw results]](https://drive.google.com/drive/folders/1Ppj9VIQ6n0KavnaZ2E1S-pKFSrRjQGuW?usp=sharing) [[Pretrained Model]](https://drive.google.com/file/d/1-ijK1kIqpBlSFTbPYNA9Ddfkgn3qrgSI/view?usp=sharing)**
     
-![ACCV2020](./accv2020.jpg)
+<img src="./accv2020.jpg" alt="drawing" width="200"/>
 
 ### A3CT, A3CTD
 **[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  [[Qualitative results]](https://youtu.be/jSGLafk4-G4)
   [[Pretrained Model]](https://drive.google.com/file/d/1UotexDsuXLwQAx7mTnCf-iEL2QD0Om8d/view?usp=sharing)**
     
-![ICCVW2019](./iccvw2019.png)
+<img src="./iccvw2019.png" alt="drawing" width="200"/>
 
 
 
