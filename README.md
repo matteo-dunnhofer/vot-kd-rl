@@ -1,31 +1,26 @@
-# REPOSITORY STILL UNDER DEVELOPMENT
-
-
 # Tracking-by-Trackers
-Official implementation of the tracking-by-trackers concept proposed in the paper
-**"Tracking-by-Tracker with a Distilled and Reinforced Model"**.
+Official implementation of the tracking-by-trackers framework proposed in the paper
+**"Tracking-by-Trackers with a Distilled and Reinforced Model"**.
 
-## Trackers
-The repository contains the official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), **A3CT**, **A3CTD** (ICCVW 2019) trackers, including trained models. 
+In particular, the repository contains the official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), and **A3CT**, **A3CTD** (ICCVW 2019) trackers, including trained models, and raw results. 
 
 ### TRAS, TRAST, TRASFUST
 **[[Paper]](https://arxiv.org/abs/2007.04108)  [[Qualitative results]](https://youtu.be/uKtQgPk3nCU) [[Raw results]](https://drive.google.com/drive/folders/1Ppj9VIQ6n0KavnaZ2E1S-pKFSrRjQGuW?usp=sharing) [[Pretrained Model]](https://drive.google.com/file/d/1-ijK1kIqpBlSFTbPYNA9Ddfkgn3qrgSI/view?usp=sharing)**
     
-
 ![ACCV2020](./accv2020.jpg)
 
 ### A3CT, A3CTD
 **[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  
-[[Qualitative results]](https://youtu.be/jSGLafk4-G4) [[Raw results]]()
-  [[Pretrained Model]]()**
+[[Qualitative results]](https://youtu.be/jSGLafk4-G4)
+  [[Pretrained Model]](https://drive.google.com/file/d/1UotexDsuXLwQAx7mTnCf-iEL2QD0Om8d/view?usp=sharing)**
     
-![ICCVW_qualex_video](https://youtu.be/jSGLafk4-G4)
+![ICCVW2019](./iccvw.png)
 
 
 
 ## Installation
 
-Code has been developed and tested on Ubuntu 18.04 with python 3.6, PyTorch 1.4.0, and CUDA 10.
+Code has been developed and tested on Ubuntu 18.04 with Python 3.6, PyTorch 1.4.0, and CUDA 10.
 
 #### Clone the GIT repository.  
 ```bash
@@ -33,12 +28,12 @@ git clone https://github.com/dontfollowmeimcrazy/vot-kd-rl.git
 ```
 
 #### Set paths to checkpoint. 
-Download the pretrained weights file from here, put wherever you want in your machine, and set the variable ```CKPT_PATH``` variable (contained in file ```track/config_track_accv.py```) to point it.
+Download the pretrained weights file from [here](https://drive.google.com/file/d/1-ijK1kIqpBlSFTbPYNA9Ddfkgn3qrgSI/view?usp=sharing), put wherever you want in your file system, and set the variable ```CKPT_PATH``` variable (contained in file ```track/config_track_accv.py```) to point to it.
    
 ## Test
 
 #### Set path to benchmark datasets.  
-In the file ```track/config_track_accv.py``` set the ```DATA_PATH``` variable to path of where the benchmark datasets are stored.
+In the file ```track/config_track_accv.py``` set the variable ```DATA_PATH``` to the location of the benchmark datasets (if you do not have them on your machine they will be automatically downloaded by the toolkit at the specified ```DATA_PATH```).
 
 Run the script track/run_test.py by specifing the tracker with the ```--tracker``` option and the dataset with the ```--dataset```.
 ```bash
@@ -46,9 +41,9 @@ cd track
 python run_test.py --tracker TRAS --dataset OTB2015  
 ```  
 
-For TRAST and TRASFUST trackers you either need to:
-	* provide the implementation of "teacher" trackers according to the [GOT-10k toolkit]() tracker definition, and initialize them in lines of the ```track/Trackers.py``` file.
-	* use the precomputed results of the "teacher" trackers
+For the TRAST, TRASFUST, and A3CTD trackers you either need to:
+	* provide the implementation of "teacher" trackers according to the [GOT-10k toolkit](https://github.com/got-10k/toolkit) tracker class definition, and initialize them in lines [103](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L103)  and [232](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L232) of the ```track/Trackers.py``` file.
+	* use the precomputed results of the "teacher" trackers. In this case, you have to specify the variable ```TRACKER_RESULTS_PATH``` which should point to a folder named after the tracker's name and containing the raw results as a single ```*.txt``` file for every sequence. Some examples are given in the folder ```trackers/results/*``` for the ECO, MDNet, and SiamFC trackers.
 
 ## Training
 Training code will be released soon!

@@ -1,7 +1,7 @@
 """
 Written by Matteo Dunnhofer - 2020
 
-Class that defines an results tracker
+Class that defines a tracker based on stored results
 """
 import os
 import numpy as np

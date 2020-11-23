@@ -1,7 +1,7 @@
 """
 Written by Matteo Dunnhofer - 2020
 
-Configuration class for TRAS, TRAST, TRASFUST
+Configuration class for A3CT, A3CTD
 """
 
 class Configuration(object):
@@ -13,11 +13,10 @@ class Configuration(object):
     SIZE = [128, 128]
     SEQ_LENGTH = 32
     CONTEXT_FACTOR = 1.5
-    LSTM_UPDATE = True
+    LSTM_UPDATE = False
 
     USE_RESULTS = True
-    TRAST_TEACHER = 'ECO'
-    TRASFUST_TEACHERS = ['ECO', 'MDNet']
+    TRAST_TEACHER = 'SiamFC'
     TRACKER_RESULTS_PATH = './trackers/results'
 
     USE_GPU = True

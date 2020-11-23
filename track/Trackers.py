@@ -11,7 +11,6 @@ import torch
 from model.StudentModel import StudentModel
 from data.DataTransformer import DataTransformer
 import utils as ut
-#from trackers.SiamFC.siamfc import TrackerSiamFC
 from trackers.ResultsTracker import ResultsTracker
 
 from got10k.trackers import Tracker

@@ -13,8 +13,7 @@ from Trackers import Tracker_got10k
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', help='Name of the dataset to test on', type=str)
-    parser.add_argument('--tracker', help='Tracker to run, either A3CT, A3CTD or A3CTDF')
-    #parser.add_argument('--use-results', help='Use pre-computed results and not run trackers', action="store_true")
+    parser.add_argument('--tracker', help='Tracker to run, either TRAS, TRAST or TRASFUST')
     parser.add_argument('--visualize', help='Visualize predictions while testing', action="store_true")
     args = parser.parse_args()
 
@@ -31,12 +30,7 @@ if __name__ == '__main__':
     tracker = Tracker_got10k(args.tracker, cfg)
 
     # setup experiments
-    if args.dataset == 'GOT-10k-val':
-        e = ExperimentGOT10k(base_data_path + 'GOT-10k',
-            result_dir= base_data_path + 'results',
-            report_dir= base_data_path + 'reports',
-            subset='val')
-    elif args.dataset == 'GOT-10k-test':
+    if args.dataset == 'GOT10k':
         e = ExperimentGOT10k(base_data_path + 'GOT-10k',
             result_dir= base_data_path + 'results',
             report_dir= base_data_path + 'reports',
@@ -55,10 +49,6 @@ if __name__ == '__main__':
         e = ExperimentUAV123(base_data_path + 'UAV123', version='UAV123',
             result_dir= base_data_path + 'results',
             report_dir= base_data_path + 'reports')
-    elif args.dataset == 'TempleColor128':
-        e = ExperimentTColor128(base_data_path + 'Temple-color-128',
-            result_dir=base_data_path + 'results',
-            report_dir=base_data_path + 'reports')
     elif args.dataset == 'LaSOT':
         e = ExperimentLaSOT(base_data_path + 'LaSOTBenchmark',
             result_dir=base_data_path + 'results',
