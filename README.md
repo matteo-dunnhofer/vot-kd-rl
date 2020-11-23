@@ -69,6 +69,6 @@ year = {2019}
 }   
 ``` 
 
-### Acknowledgments 
+### Acknowledgements 
 
 Code for evaluation was borrowed from the [GOT-10k toolkit](https://github.com/got-10k/toolkit).
