@@ -9,6 +9,7 @@ class Configuration(object):
 
     DATA_PATH = '/media/TBData2/data/vot/'
     CKPT_PATH = '/media/TBData2/projects/vot-kd-rl-domain-adapt/experiments/VotRlDemo201910100651-pool/TEST_WORKER_25/ckpt/ActorCriticModel_120000.weights'  # None
+    RESULTS_PATH = './trackers/results'
 
     SIZE = [128, 128]
     SEQ_LENGTH = 32
@@ -17,7 +18,6 @@ class Configuration(object):
 
     USE_RESULTS = True
     TRAST_TEACHER = 'SiamFC'
-    TRACKER_RESULTS_PATH = './trackers/results'
 
     USE_GPU = True
 

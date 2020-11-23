@@ -42,7 +42,7 @@ python run_test.py --tracker TRAS --dataset OTB2015
 
 For the TRAST, TRASFUST, and A3CTD trackers you either need to:
 	+ provide the implementation of "teacher" trackers according to the [GOT-10k toolkit](https://github.com/got-10k/toolkit) tracker class definition, and initialize them in lines [103](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L103) and [232](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L232) of the ```track/Trackers.py``` file.
-	+ use the precomputed results of the "teacher" trackers. In this case, you have to specify the variable ```TRACKER_RESULTS_PATH``` which should point to a folder named after the tracker's name and containing the raw results (a single ```*.txt``` file for every sequence). Some examples are given in the folder ```trackers/results/*``` for the ECO, MDNet, and SiamFC trackers.
+	+ use the precomputed results of the "teacher" trackers. In this case, you have to specify the variable ```RESULTS_PATH``` which should point to the results folder used by the [GOT-10k toolkit](https://github.com/got-10k/toolkit). Results should be organised as given by the toolkit (e.g. ```benchmark-name/tracker-name/*.txt```). Some examples are given in the folder ```trackers/results/*``` for the OTB2015 results of ECO, MDNet, and SiamFC trackers.
 
 ## Training
 Training code will be released soon!

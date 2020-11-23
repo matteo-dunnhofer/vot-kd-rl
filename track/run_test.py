@@ -32,27 +32,27 @@ if __name__ == '__main__':
     # setup experiments
     if args.dataset == 'GOT10k':
         e = ExperimentGOT10k(base_data_path + 'GOT-10k',
-            result_dir= base_data_path + 'results',
-            report_dir= base_data_path + 'reports',
+            result_dir=cfg.RESULTS_PATH,
+            report_dir=cfg.REPORT_PATH,
             subset='test')
     elif 'OTB' in args.dataset:
         version = int(''.join(list(filter(str.isdigit, args.dataset))))
         e = ExperimentOTB(base_data_path + 'OTB', version=version,
-            result_dir= base_data_path + 'results',
-            report_dir= base_data_path + 'reports')
+            result_dir=cfg.RESULTS_PATH,
+            report_dir=cfg.REPORT_PATH)
     elif 'VOT' in args.dataset:
         version = int(''.join(list(filter(str.isdigit, args.dataset))))
         e = ExperimentVOT(base_data_path + 'VOT/'+str(version), version=version,
-            result_dir= base_data_path + 'results',
-            report_dir= base_data_path + 'reports')
+            result_dir=cfg.RESULTS_PATH,
+            report_dir=cfg.REPORT_PATH)
     elif args.dataset == 'UAV123':
         e = ExperimentUAV123(base_data_path + 'UAV123', version='UAV123',
-            result_dir= base_data_path + 'results',
-            report_dir= base_data_path + 'reports')
+            result_dir=cfg.RESULTS_PATH,
+            report_dir=cfg.REPORT_PATH)
     elif args.dataset == 'LaSOT':
         e = ExperimentLaSOT(base_data_path + 'LaSOTBenchmark',
-            result_dir=base_data_path + 'results',
-            report_dir=base_data_path + 'reports')
+            result_dir=cfg.RESULTS_PATH,
+            report_dir=cfg.REPORT_PATH)
 
 
     # run tracking experiments and report performance
