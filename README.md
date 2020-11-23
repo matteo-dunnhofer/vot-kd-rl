@@ -1,6 +1,6 @@
 # Tracking-by-Trackers
 Official implementation of the tracking-by-trackers framework proposed in the paper
-**"Tracking-by-Trackers with a Distilled and Reinforced Model"**.
+**"Tracking-by-Trackers with a Distilled and Reinforced Model"** (presented at the Asian Conference on Computer Vision 2020).
 
 In particular, the repository contains the official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), and **A3CT**, **A3CTD** (ICCVW 2019) trackers, including trained models, and raw results. 
 
@@ -10,11 +10,10 @@ In particular, the repository contains the official implementation of the **TRAS
 ![ACCV2020](./accv2020.jpg)
 
 ### A3CT, A3CTD
-**[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  
-[[Qualitative results]](https://youtu.be/jSGLafk4-G4)
+**[[Paper]](https://openaccess.thecvf.com/content_ICCVW_2019/html/VOT/Dunnhofer_Visual_Tracking_by_Means_of_Deep_Reinforcement_Learning_and_an_ICCVW_2019_paper.html)  [[Qualitative results]](https://youtu.be/jSGLafk4-G4)
   [[Pretrained Model]](https://drive.google.com/file/d/1UotexDsuXLwQAx7mTnCf-iEL2QD0Om8d/view?usp=sharing)**
     
-![ICCVW2019](./iccvw.png)
+![ICCVW2019](./iccvw2019.png)
 
 
 
@@ -42,8 +41,8 @@ python run_test.py --tracker TRAS --dataset OTB2015
 ```  
 
 For the TRAST, TRASFUST, and A3CTD trackers you either need to:
-	* provide the implementation of "teacher" trackers according to the [GOT-10k toolkit](https://github.com/got-10k/toolkit) tracker class definition, and initialize them in lines [103](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L103)  and [232](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L232) of the ```track/Trackers.py``` file.
-	* use the precomputed results of the "teacher" trackers. In this case, you have to specify the variable ```TRACKER_RESULTS_PATH``` which should point to a folder named after the tracker's name and containing the raw results as a single ```*.txt``` file for every sequence. Some examples are given in the folder ```trackers/results/*``` for the ECO, MDNet, and SiamFC trackers.
+	+ provide the implementation of "teacher" trackers according to the [GOT-10k toolkit](https://github.com/got-10k/toolkit) tracker class definition, and initialize them in lines [103](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L103) and [232](https://github.com/dontfollowmeimcrazy/vot-kd-rl/blob/1210631b0d1d5977cf8f0c872a47aff3041eef21/track/Trackers.py#L232) of the ```track/Trackers.py``` file.
+	+ use the precomputed results of the "teacher" trackers. In this case, you have to specify the variable ```TRACKER_RESULTS_PATH``` which should point to a folder named after the tracker's name and containing the raw results (a single ```*.txt``` file for every sequence). Some examples are given in the folder ```trackers/results/*``` for the ECO, MDNet, and SiamFC trackers.
 
 ## Training
 Training code will be released soon!
