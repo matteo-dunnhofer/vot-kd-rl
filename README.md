@@ -37,8 +37,7 @@ In the file ```track/config_track_accv.py``` set the variable ```DATA_PATH``` to
 
 Run the script track/run_test.py by specifing the tracker with the ```--tracker``` option and the dataset with the ```--dataset```.
 ```bash
-cd track
-python run_test.py --tracker TRAS --dataset OTB2015  
+python track/run_test.py --tracker TRAS --dataset OTB2015  
 ```  
 
 For the TRAST, TRASFUST, and A3CTD trackers you either need to:
