@@ -7,9 +7,10 @@ Configuration class for A3CT, A3CTD
 class Configuration(object):
 
 
-    DATA_PATH = '/media/TBData2/data/vot/'
-    CKPT_PATH = '/media/TBData2/projects/vot-kd-rl-domain-adapt/experiments/VotRlDemo201910100651-pool/TEST_WORKER_25/ckpt/ActorCriticModel_120000.weights'  # None
+    DATA_PATH = ''
+    CKPT_PATH = ''
     RESULTS_PATH = './trackers/results'
+    REPORT_PATH = '../track/reports'
 
     SIZE = [128, 128]
     SEQ_LENGTH = 32

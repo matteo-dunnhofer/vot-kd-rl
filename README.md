@@ -37,7 +37,8 @@ In the file ```track/config_track_accv.py``` set the variable ```DATA_PATH``` to
 
 Run the script track/run_test.py by specifing the tracker with the ```--tracker``` option and the dataset with the ```--dataset```.
 ```bash
-python track/run_test.py --tracker TRAS --dataset OTB2015  
+cd track
+python run_test.py --tracker TRAS --dataset OTB2015  
 ```  
 
 For the TRAST, TRASFUST, and A3CTD trackers you either need to:
@@ -60,11 +61,11 @@ If you find this work useful please cite
 }
 
 @InProceedings{Dunnhofer_2019_ICCVW,
-	author = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
-	title = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
+	author 	  = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
+	title 	  = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
 	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
-	month = {Oct},
-	year = {2019}
+	month 	  = {Oct},
+	year 	  = {2019}
 }   
 ``` 
 
