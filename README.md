@@ -5,7 +5,7 @@ Official implementation of the tracking-by-trackers framework proposed in the pa
 In particular, the repository contains the official implementation of the **TRAS**, **TRAST**, **TRASFUST** (ACCV 2020), and **A3CT**, **A3CTD** (ICCVW 2019) trackers, including trained models, and raw results. 
 
 ### TRAS, TRAST, TRASFUST
-**[[Paper]](https://arxiv.org/abs/2007.04108)  [[Qualitative results]](https://youtu.be/uKtQgPk3nCU) [[Raw results]](https://drive.google.com/drive/folders/1Ppj9VIQ6n0KavnaZ2E1S-pKFSrRjQGuW?usp=sharing) [[Pretrained Model]](https://drive.google.com/file/d/1-ijK1kIqpBlSFTbPYNA9Ddfkgn3qrgSI/view?usp=sharing)**
+**[[Paper]](https://openaccess.thecvf.com/content/ACCV2020/html/Dunnhofer_Tracking-by-Trackers_with_a_Distilled_and_Reinforced_Model_ACCV_2020_paper.html)  [[Qualitative results]](https://youtu.be/uKtQgPk3nCU) [[Raw results]](https://drive.google.com/drive/folders/1Ppj9VIQ6n0KavnaZ2E1S-pKFSrRjQGuW?usp=sharing) [[Pretrained Model]](https://drive.google.com/file/d/1-ijK1kIqpBlSFTbPYNA9Ddfkgn3qrgSI/view?usp=sharing)**
   
 <img src="./accv2020.jpg" alt="drawing"/>
 
@@ -53,19 +53,19 @@ Training code will be released soon!
 If you find this work useful please cite
 ```
 @InProceedings{Dunnhofer_2020_ACCV,
-author = {Dunnhofer, Matteo and Martinel, Niki and Micheloni, Christian},
-title = {Tracking-by-Trackers with a Distilled and Reinforced Model},
-booktitle = {Asian Conference on Computer Vision (ACCV)},
-month = {Dec},
-year = {2020}
+    author    = {Dunnhofer, Matteo and Martinel, Niki and Micheloni, Christian},
+    title     = {Tracking-by-Trackers with a Distilled and Reinforced Model},
+    booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+    month     = {November},
+    year      = {2020}
 }
 
 @InProceedings{Dunnhofer_2019_ICCVW,
-author = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
-title = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
-booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
-month = {Oct},
-year = {2019}
+	author = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
+	title = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
+	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+	month = {Oct},
+	year = {2019}
 }   
 ``` 
 
