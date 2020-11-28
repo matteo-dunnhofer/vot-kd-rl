@@ -53,19 +53,19 @@ Training code will be released soon!
 If you find this work useful please cite
 ```
 @InProceedings{Dunnhofer_2020_ACCV,
-    author    = {Dunnhofer, Matteo and Martinel, Niki and Micheloni, Christian},
-    title     = {Tracking-by-Trackers with a Distilled and Reinforced Model},
-    booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
-    month     = {November},
-    year      = {2020}
+	author    = {Dunnhofer, Matteo and Martinel, Niki and Micheloni, Christian},
+	title     = {Tracking-by-Trackers with a Distilled and Reinforced Model},
+	booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+	month     = {November},
+	year      = {2020}
 }
 
 @InProceedings{Dunnhofer_2019_ICCVW,
-    author 	  = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
-    title 	  = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
-    month 	  = {Oct},
-    year 	  = {2019}
+	author 	  = {Dunnhofer, Matteo and Martinel, Niki and Luca Foresti, Gian and Micheloni, Christian},
+	title 	  = {Visual Tracking by Means of Deep Reinforcement Learning and an Expert Demonstrator},
+	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+	month 	  = {Oct},
+	year 	  = {2019}
 }   
 ``` 
 
