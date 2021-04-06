@@ -1,4 +1,8 @@
 # Tracking-by-Trackers
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-distilled-model-for-tracking-and-tracker/visual-object-tracking-on-otb-2015)](https://paperswithcode.com/sota/visual-object-tracking-on-otb-2015?p=a-distilled-model-for-tracking-and-tracker)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-distilled-model-for-tracking-and-tracker/visual-object-tracking-on-uav123)](https://paperswithcode.com/sota/visual-object-tracking-on-uav123?p=a-distilled-model-for-tracking-and-tracker)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-distilled-model-for-tracking-and-tracker/visual-object-tracking-on-got-10k)](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k?p=a-distilled-model-for-tracking-and-tracker)
+
 Official implementation of the tracking-by-trackers framework proposed in the paper
 **"Tracking-by-Trackers with a Distilled and Reinforced Model"** (presented at the Asian Conference on Computer Vision 2020).
 
